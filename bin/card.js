@@ -20,12 +20,14 @@ let data = {
   'github': chalk.cyan('https://github.com/oliviernt'),
   'linkedin': chalk.cyan('https://linkedin.com/in/oliviernt'),
   'web': chalk.cyan('https://www.olivier-tille.de'),
+  'keybase': chalk.cyan('https://keybase.io/oliviernt'),
   'npx': chalk.white('npx oliviernt'),
   'labelWork': chalk.white.bold('      Work:'),
   'labelTwitter': chalk.white.bold('   Twitter:'),
   'labelGitHub': chalk.white.bold('    GitHub:'),
   'labelLinkedIn': chalk.white.bold('  LinkedIn:'),
   'labelWeb': chalk.white.bold('       Web:'),
+  'labelKeybase': chalk.white.bold('   Keybase:'),
   'labelCard': chalk.white.bold('      Card:')
 }
 
@@ -37,9 +39,26 @@ var twittering = `${data.labelTwitter}  ${data.twitter}`
 var githubing = `${data.labelGitHub}  ${data.github}`
 var linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
 var webing = `${data.labelWeb}  ${data.web}`
+var keybaseing = `${data.labelKeybase}  ${data.keybase}`
 var carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-let output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+let output = heading 
+            + newline 
+            + newline 
+            + working 
+            + newline 
+            + twittering 
+            + newline 
+            + githubing 
+            + newline 
+            + linkedining 
+            + newline 
+            + keybaseing 
+            + newline 
+            + webing 
+            + newline 
+            + newline 
+            + carding
 
 console.log(chalk.green(boxen(output, options)))
