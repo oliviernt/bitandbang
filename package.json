@@ -1,6 +1,6 @@
 {
   "name": "oliviernt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A personal card for Olivier Tille (@oliviernt)",
   "main": "index.js",
   "bin": {
